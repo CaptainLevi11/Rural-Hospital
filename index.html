@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rural Hospital Khultabad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="middlebar.css">
+
+</head>
+<body>
+    <!-- almost fixed -->
+    <div class="header-middle">
+        <div class="header-wrapper">
+            <div class="container">
+                <!-- Left Side: Emblem Only (Increased Size) -->
+                <div class="left-section">
+                    <a href="https://phd.maharashtra.gov.in/" title="Go to home">
+                        <img id="logo" class="emblem" src="https://phd.maharashtra.gov.in/wp-content/themes/sdo-theme/images/emblem.svg" 
+                             alt="State Emblem of India" width="100" height="100">
+                    </a>
+                </div>
+    
+                <!-- Center: Government Title & Hospital Name -->
+                <div class="center-section">
+                    <p class="gov-text">Government of Maharashtra Public Health Department</p>
+                    <h1 class="hospital-name">RURAL HOSPITAL KHULTABAD DISTRICT AURANGABAD</h1>
+                </div>
+    
+                <!-- Right Side: Beti Bachao & Digital India -->
+                <div class="right-section">
+                    <a href="https://wcd.nic.in/bbbp-schemes" target="_blank">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s3feecee9f1643651799ede2740927317a/uploads/2025/01/202501211436521296.png" alt="Beti Bachao Beti Padhao Logo">
+                    </a>
+                    <a href="https://www.digitalindia.gov.in/" target="_blank">
+                        <img src="https://cdnbbsr.s3waas.gov.in/s3feecee9f1643651799ede2740927317a/uploads/2019/03/2019031587.png" alt="Digital India">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- error part end -->
+    
+    <nav >
+        <ul class="menu">
+            <!-- <li><a href="#">Rural Hospital Khultabad</a></li> -->
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown-container">
+                <a href="#">Schemes/Programmes</a>
+                <ul class="dropdown">
+                    <li><a href="schemes.html" target="_blank">Central Government</a></li>
+                    <li><a href="https://phd.maharashtra.gov.in/provider/state-government/" >State Government</a></li>
+                    <li><a href="https://phd.maharashtra.gov.in/provider/joint-venture-central-state/" >Joint Venture</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Notices</a></li>
+            <li><a href="#">Documents</a></li>
+            <li><a href="#">RTSA</a></li>
+            <li class="dropdown-container">
+                <a href="#">About Us</a>
+                <ul class="dropdown">
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="w3-content w3-section">
+        <img class="mySlides" src="https://media.istockphoto.com/id/583958532/photo/kailas-temple-in-ellora-caves-complex-in-india.jpg?s=612x612&w=0&k=20&c=kmbUZpgjHlohgIuJNYRrjE0B5WFUFyseSJ3Ld4KyyJg=" alt="Ellora Caves">
+        <img class="mySlides" src="https://media.istockphoto.com/id/1441577142/photo/side-view-of-the-bibi-ka-maqbara-tomb-against-a-clear-blue-sky-in-aurangabad-maharashtra-india.jpg?s=612x612&w=0&k=20&c=yJY0I1WL-Rv1xzxXds6roKecG-SXDPtb4PeLJbAoHA0=" alt="Bibi Ka Maqbara">
+        <img class="mySlides" src="https://media.istockphoto.com/id/1498994617/photo/delhi-gate-in-aurangabad-maharashtra-india-asia.jpg?s=612x612&w=0&k=20&c=C6Gs60mLxiUoNijPFs3iNEayd6qG82apc-Czq5-6FvU=" alt="Delhi Gate">
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Rural Hospital Khultabad is committed to providing high-quality healthcare services to the community. Our dedicated team of doctors, nurses, and staff work tirelessly to ensure the well-being of our patients. We offer various government healthcare schemes and programs to make medical services accessible to all.</p>
+        </div>
+    </section>
+
+    <script>
+        var myIndex = 0;
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 5000);
+        }
+        carousel();
+    </script>
+</body>
+</html>
+
+<!-- left side = arogya vibhag / health department logo -->
+<!-- right side = bedi badhao beti padhao -->
+<!-- center = emblem -->
